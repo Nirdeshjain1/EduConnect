@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 50px;
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+        }
+
+        p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 1.5em;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .sign-up-button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        .sign-up-button:hover {
+            background-color: #333;
+        }
+
+        .login-link {
+            display: block;
+            margin-top: 1em;
+            font-size: 0.9em;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\DELL\Downloads\edu-removebg-preview.png" alt="Logo" class="logo">
+        <h1>Create new Account</h1>
+        <p>Already Registered? <a href="login.html" class="login-link">Log in here.</a></p>
+        <form action="register.php" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="date" name="dob" placeholder="Date of Birth" required>
+            <button type="submit" class="sign-up-button">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

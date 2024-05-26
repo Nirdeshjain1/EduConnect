@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 50px;
+            margin-bottom: 1em;
+        }
+
+        h1 {
+            font-size: 1.5em;
+            margin: 0.5em 0;
+        }
+
+        p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 1.5em;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        .login-button:hover {
+            background-color: #333;
+        }
+
+        .register-link {
+            display: block;
+            margin-top: 1em;
+            font-size: 0.9em;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .register-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\DELL\Downloads\edu-removebg-preview.png" alt="Logo" class="logo">
+        <h1>Login</h1>
+        <p>Sign in to continue.</p>
+        <form action="login.php" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+        <a href="create.html" class="register-link">Create new account</a>
+    </div>
+</body>
+</html>
