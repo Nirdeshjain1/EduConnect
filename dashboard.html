@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educonnect Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="C:\Users\DELL\Downloads\edu-removebg-preview.png" alt="Educonnect">
+                <h1>Educonnect</h1>
+            </div>
+            <ul>
+                <li><a href="#" onclick="showSection('user-profile')">User Profile</a></li>
+                <li><a href="#" onclick="showSection('live-streaming')">Live Streaming</a></li>
+                <li><a href="#" onclick="showSection('emergency')">Emergency</a></li>
+                <li><a href="#" onclick="showSection('announcement')">Announcement</a></li>
+                <li><a href="#" onclick="showSection('notification')">Notification</a></li>
+                <li><a href="#" onclick="showSection('group-chat')">Group Chat</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <header>
+                <h2>STUDENT</h2>
+                <div class="user-info">
+                    <span>STUDENT NAME</span>
+                    <img src="C:\Users\DELL\OneDrive\Desktop\EduConnect\hat logo.png" alt="User Icon">
+                </div>
+            </header>
+            <div id="user-profile" class="section active">
+                <h3>User Profile</h3>
+                <div class="profile-menu">
+                    <div class="profile-menu-column">
+                        <h4>My Profile</h4>
+                        <ul>
+                            <li><a href="#personal" onclick="showSubSection('personal')">Personal</a></li>
+                            <li><a href="#address" onclick="showSubSection('address')">Address</a></li>
+                            <li><a href="#parents" onclick="showSubSection('parents')">Parents</a></li>
+                            <li><a href="#siblings" onclick="showSubSection('siblings')">Siblings</a></li>
+                        </ul>
+                    </div>
+                    <div class="profile-menu-column">
+                        <h4>Past History</h4>
+                        <ul>
+                            <li><a href="#education" onclick="showSubSection('education')">Education</a></li>
+                            <li><a href="#work-experience" onclick="showSubSection('work-experience')">Work Experience</a></li>
+                            <li><a href="#medical-conditions" onclick="showSubSection('medical-conditions')">Medical Conditions</a></li>
+                            <li><a href="#extracurricular" onclick="showSubSection('extracurricular')">Extracurricular</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="profile-content">
+                    <div id="personal" class="sub-section active">
+                        <h4>Personal Information</h4>
+                        <p>Name: John Doe</p>
+                        <p>Date of Birth: January 1, 2000</p>
+                        <p>Gender: Male</p>
+                        <!-- Add more personal information here -->
+                    </div>
+                    <div id="address" class="sub-section">
+                        <h4>Address</h4>
+                        <p>Street: 123 Main St</p>
+                        <p>City: Anytown</p>
+                        <p>State: Anystate</p>
+                        <p>Zip Code: 12345</p>
+                        <!-- Add more address information here -->
+                    </div>
+                    <div id="parents" class="sub-section">
+                        <h4>Parents</h4>
+                        <p>Father: John Doe Sr.</p>
+                        <p>Mother: Jane Doe</p>
+                        <!-- Add more parent information here -->
+                    </div>
+                    <div id="siblings" class="sub-section">
+                        <h4>Siblings</h4>
+                        <p>Brother: Jack Doe</p>
+                        <p>Sister: Jill Doe</p>
+                        <!-- Add more sibling information here -->
+                    </div>
+                    <div id="education" class="sub-section">
+                        <h4>Education</h4>
+                        <p>High School: Anytown High School</p>
+                        <p>Graduation Year: 2018</p>
+                        <!-- Add more education information here -->
+                    </div>
+                    <div id="work-experience" class="sub-section">
+                        <h4>Work Experience</h4>
+                        <p>Job Title: Intern</p>
+                        <p>Company: Anycompany Inc.</p>
+                        <p>Duration: June 2019 - August 2019</p>
+                        <!-- Add more work experience information here -->
+                    </div>
+                    <div id="medical-conditions" class="sub-section">
+                        <h4>Medical Conditions</h4>
+                        <p>Condition: Asthma</p>
+                        <p>Medication: Inhaler</p>
+                        <!-- Add more medical condition information here -->
+                    </div>
+                    <div id="extracurricular" class="sub-section">
+                        <h4>Extracurricular Activities</h4>
+                        <p>Activity: Soccer Team</p>
+                        <p>Position: Forward</p>
+                        <!-- Add more extracurricular information here -->
+                    </div>
+                </div>
+            </div>
+            <div id="live-streaming" class="section">
+                <h3>Live Streaming</h3>
+                <div class="video-stream">
+                    <img src="C:\Users\DELL\OneDrive\Desktop\EduConnect\download.jpeg" alt="Live Stream">
+                </div>
+            </div>
+            <div id="emergency" class="section">
+                <p>Subject: Notification of Holiday Due to High Heat Wave</p>
+                <p>Dear Students,</p>
+                <p>In compliance with the government's instructions and considering the safety and well-being of our students, the university has decided to declare today a holiday due to the high heat wave prevailing in the region. We understand the discomfort and health risks associated with extreme temperatures, and we prioritize the welfare of our students above all else.</p>
+                <p>Please take this opportunity to stay hydrated, seek shelter in cool environments, and take necessary precautions to ensure your well-being during this heat wave.</p>
+                <p>Thank you for your understanding.</p>
+                <p>Sincerely,</p>
+                <p>[University Name]</p>
+                <p>Administration</p>
+                <h3>Emergency</h3>
+                <!-- Emergency content goes here -->
+            </div>
+            <div id="announcement" class="section">
+                <ul>
+                    <li>
+                        <p>K.R Mangalam University is going to conduct the mind blender 3.0 on 29th April online and 30th April offline at campus venue multipurpose Hall 4th floor, a block.</p>
+                        <img src="C:\Users\DELL\OneDrive\Desktop\EduConnect\mindblender.png" alt="Mind Blender">
+                    </li>
+                    <li>
+                        <p>Following Students are requested to take part in this Program.</p>
+                    </li>
+                </ul>
+                <h3>Announcement</h3>
+                <!-- Announcement content goes here -->
+            </div>
+            <div id="notification" class="section">
+                <h3>Notification</h3>
+                <div class="no-notification">
+                    <img src="C:\Users\DELL\OneDrive\Desktop\EduConnect\bell.png" alt="No Notification">
+                    <p>No Notification Here</p>
+                </div>
+            </div>
+            <div id="group-chat" class="section">
+                <h3>Group Chat</h3>
+                <div class="chat-box">
+                    <div class="message">
+                        <p><strong>Grace Harper:</strong> Hey guys what's the latest on the project? We really need to speed things up and the meeting is scheduled for next week.</p>
+                    </div>
+                    <div class="message">
+                        <p><strong>Chris Pearce:</strong> Hi Grace, development is moving along at a steady pace and we'll be more than ready by early next week.</p>
+                    </div>
+                    <div class="message">
+                        <p><strong>Me:</strong> Correct. Expect a full report by Monday!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
